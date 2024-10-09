@@ -1,0 +1,85 @@
+*{
+    margin: 3px;
+    padding: 1px;
+    background-color: lightskyblue;
+}
+header{
+    background-color: blueviolet;
+    color: white;
+    font-size: larger;
+  
+}
+main h2{
+    color: white;
+    background-color: blueviolet;
+}
+footer p{
+   text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: medium;
+    }
+    
+    main h2 {
+        font-size: larger;
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    footer p {
+        font-size: small;
+    }
+}
+/* Media query for screens less than or equal to 771px */
+@media only screen and (max-width: 771px) {
+    header {
+        text-align: center;
+    }
+    
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    main {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust header size */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust section header size */
+    }
+
+    p {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+}
+
+/* Media query for screens less than or equal to 520px */
+@media only screen and (max-height: 520px) {
+    header img {
+        height: 200px; /* Reduce image size */
+    }
+
+    h1 {
+        font-size: 20px; /* Further reduce header size */
+    }
+
+    h2 {
+        font-size: 18px; /* Further reduce section header size */
+    }
+
+    p {
+        font-size: 14px; /* Further reduce paragraph text size */
+    }
+}
